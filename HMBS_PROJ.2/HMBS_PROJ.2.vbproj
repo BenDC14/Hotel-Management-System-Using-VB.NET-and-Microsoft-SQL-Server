@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34190AE4-1274-4343-B193-2BB5FBA68326}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HMBS_PROJ._2.My.MyApplication</StartupObject>
+    <RootNamespace>HMBS_PROJ._2</RootNamespace>
+    <AssemblyName>HMBS_PROJ.2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HMBS_PROJ.2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HMBS_PROJ.2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Server.1.0.0\lib\net46\Microsoft.SqlServer.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts.Designer.vb">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Homepage.Designer.vb">
+      <DependentUpon>Admin_Homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Payment.Designer.vb">
+      <DependentUpon>Admin_Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amenity.Designer.vb">
+      <DependentUpon>Amenity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Amenity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking_Admin.Designer.vb">
+      <DependentUpon>Booking_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Booking_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking_Form.Designer.vb">
+      <DependentUpon>Booking_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Booking_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_registration.Designer.vb">
+      <DependentUpon>employee_registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employee_registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_homepage.Designer.vb">
+      <DependentUpon>emp_homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emp_homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPass.Designer.vb">
+      <DependentUpon>ForgetPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest_Form.Designer.vb">
+      <DependentUpon>Guest_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Guest_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest_Form_Admin.Designer.vb">
+      <DependentUpon>Guest_Form_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Guest_Form_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOMEPAGE.Designer.vb">
+      <DependentUpon>HOMEPAGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOMEPAGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOMEPAGE_ADMIN.Designer.vb">
+      <DependentUpon>HOMEPAGE_ADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOMEPAGE_ADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID_FORM.Designer.vb">
+      <DependentUpon>ID_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ID_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LG_FORM.Designer.vb">
+      <DependentUpon>LG_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LG_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payment_Form.Designer.vb">
+      <DependentUpon>Payment_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_Amenities.Designer.vb">
+      <DependentUpon>Room_Amenities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_Amenities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_Reservation.Designer.vb">
+      <DependentUpon>Room_Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_Management_Admin.Designer.vb">
+      <DependentUpon>Room_Management_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_Management_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounts.resx">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Homepage.resx">
+      <DependentUpon>Admin_Homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Payment.resx">
+      <DependentUpon>Admin_Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amenity.resx">
+      <DependentUpon>Amenity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking_Admin.resx">
+      <DependentUpon>Booking_Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking_Form.resx">
+      <DependentUpon>Booking_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_registration.resx">
+      <DependentUpon>employee_registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_homepage.resx">
+      <DependentUpon>emp_homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPass.dje.resx">
+      <DependentUpon>ForgetPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPass.resx">
+      <DependentUpon>ForgetPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest_Form.resx">
+      <DependentUpon>Guest_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest_Form_Admin.resx">
+      <DependentUpon>Guest_Form_Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOMEPAGE.resx">
+      <DependentUpon>HOMEPAGE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOMEPAGE_ADMIN.resx">
+      <DependentUpon>HOMEPAGE_ADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID_FORM.resx">
+      <DependentUpon>ID_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LG_FORM.resx">
+      <DependentUpon>LG_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Form.resx">
+      <DependentUpon>Payment_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_Amenities.resx">
+      <DependentUpon>Room_Amenities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_Reservation.resx">
+      <DependentUpon>Room_Reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_Management_Admin.resx">
+      <DependentUpon>Room_Management_Admin.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Madoc%27s hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showpass.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
